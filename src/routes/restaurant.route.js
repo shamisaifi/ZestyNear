@@ -8,9 +8,9 @@ import {
   searchRestaurant,
 } from "../controller/restaurantController.js";
 
-router.post("/restaurant", fetchRestaurant);
-router.get("/restaurant/search", searchRestaurant);
-router.get("/restaurant/:id", restaurantDetails);
-router.get("/restaurant/:id/tips", getUserTips);
+router.post("/", fetchRestaurant);
+router.get("/search", searchRestaurant);
+router.get("/:id", restaurantDetails);
+router.get("/:id/tips", getUserTips);
 
 export default router;
