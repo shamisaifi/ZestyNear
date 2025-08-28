@@ -24,6 +24,10 @@ app.use(express.json());
 
 import restaurantRoutes from "./src/routes/restaurant.route.js";
 
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
 app.get("/api/test", (req, res) => res.send("OK"));
 app.use("/api/restaurant", restaurantRoutes);
 
